@@ -1,0 +1,42 @@
+{
+    "name": "ruudwelten/hearts",
+    "description": "Hearts card game simulator.",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hearts\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HeartsTest\\": "test/"
+        }
+    },
+    "scripts": {
+        "hearts": "@php -S 127.0.0.1:8000",
+        "setup": [
+            "@composer install",
+            "vendor/bin/phpunit test/Unit/"
+        ],
+        "test": [
+            "vendor/bin/phpunit test/Unit/"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ruud Welten",
+            "email": "info@ruudwelten.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "fakerphp/faker": "^1.13"
+    }
+}
