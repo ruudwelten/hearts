@@ -43,7 +43,7 @@ Step through:
 
     $ php index.php --step
 
-## Possible approvements
+## Possible improvements
 
 * Create player strategies: Currently there is just one strategy, namely
   'Random'. A player can now only pick allowed cards at random. It would be good
